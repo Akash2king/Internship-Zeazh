@@ -113,4 +113,4 @@ To set up the project locally, follow these steps:
 ## Conclusion
 
 This internship at Zeazh allowed me to enhance my skills in Full-Stack Web Development by working on both frontend and backend technologies, including SQL databases. I look forward to further improving my abilities and contributing to more projects in the future.
-```
+
