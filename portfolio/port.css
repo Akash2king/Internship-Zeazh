@@ -1,0 +1,276 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #6200ea;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.navbar-menu li a:hover {
+    background-color: #3700b3;
+    border-radius: 5px;
+}
+
+/* Landing Section */
+.landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    color: white;
+    padding: 100px 50px;
+}
+
+.landing-content {
+    max-width: 50%;
+}
+
+.main-title {
+    font-size: 48px;
+    color: #333;
+    font-weight: 700;
+}
+
+.subheading {
+    font-size: 20px;
+
+    color: #333;
+    font-weight: 300;
+}
+
+.landing-image {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 50px 0;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #6200ea;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.about-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 700px;
+    max-height: 700px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.about-card:hover {
+    transform: scale(1.05);
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid #6200ea;
+}
+
+.about-details {
+    flex: 2;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.about-text {
+    margin-bottom: 20px;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    color: #6200ea;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-text p, .about-text ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    background-color: #6200ea;
+    color: white;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.skills-list li:hover {
+    background-color: #3700b3;
+}
+
+
+/* Experience Section */
+.experience-section {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.experience-card {
+    background: #6200ea;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.experience-card h2 {
+    font-size: 24px;
+}
+
+/* Project Section */
+.projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.project-card {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #6200ea;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #3700b3;
+    padding: 50px;
+    color: white;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #6200ea;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #3700b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #6200ea;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

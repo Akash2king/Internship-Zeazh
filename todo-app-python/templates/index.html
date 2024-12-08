@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="todo-wrapper">
+        <h1 class="text-center">Todo App</h1>
+        
+        <form method="POST" action="{{ url_for('add_task') }}" class="task-form">
+            <input type="text" name="task_description" placeholder="Add a new task..." required>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <ul class="task-list">
+            {% for task in tasks %}
+                <li class="task-item">
+                    <input type="checkbox" class="task-checkbox" {% if task['completed'] == 1 %}checked{% endif %} 
+                        onchange="window.location='{{ url_for('complete_task', task_id=task['id']) }}'">
+                    <span class="task-text {% if task['completed'] == 1 %}completed{% endif %}">{{ task['task_description'] }}</span>
+                    <div class="task-actions">
+                        {% if task['completed'] == 0 %}
+                            <a href="{{ url_for('edit_task', task_id=task['id']) }}" class="task-action">Edit</a>
+                        {% endif %}
+                        <a href="{{ url_for('delete_task', task_id=task['id']) }}" class="task-action delete">Delete</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
